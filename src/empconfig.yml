@@ -1,1 +1,11 @@
-foo = foo version 3
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    primary:
+      type: com.alibaba.druid.pool.DruidDataSource
+      driverClassName: com.mysql.jdbc.Driver
+      #name: ggis
+      #这里配置的是管理数据库 而不是canal服务的数据源
+      url: jdbc:mysql://localhost:3306/emp?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&rewriteBatchedStatements=true
+      username: root
+      password: root
