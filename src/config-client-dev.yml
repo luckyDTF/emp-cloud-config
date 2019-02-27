@@ -1,1 +1,1 @@
-foo: jdbc:mysql://localhost:3306/emp?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&rewriteBatchedStatements=true
+foo: com.alibaba.druid.pool.DruidDataSource
